@@ -1,5 +1,13 @@
 #!/usr/bin/env sh
-# Gradle wrapper script
 
-DIR="$( cd "$( dirname "$0" )" && pwd )"
-exec "$DIR/gradle/wrapper/gradle-wrapper.jar" "$@"
+##############################################################################
+##
+##  Gradle start up script for UN*X
+##
+##############################################################################
+
+# Determine the location of the script
+APP_HOME=$(cd "$(dirname "$0")"; pwd)
+
+# Execute the Gradle wrapper
+exec java -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" "$@"
